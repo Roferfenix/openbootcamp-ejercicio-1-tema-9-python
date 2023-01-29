@@ -1,0 +1,17 @@
+# Solicitamos al usuario que introduzca una lista de países separados por comas
+paises = input("Introduce una lista de países separados por comas: ")
+
+# Convertimos la cadena en una lista separando por comas
+paises = paises.split(',')
+
+# Convertimos la lista en un conjunto para eliminar países repetidos
+paises = set(paises)
+
+# Convertimos el conjunto de nuevo en una lista
+paises = list(paises)
+
+# Ordenamos la lista alfabéticamente
+paises.sort()
+
+# Juntamos los países en una sola cadena separados por comas y los imprimimos por consola
+print(", ".join(paises))
